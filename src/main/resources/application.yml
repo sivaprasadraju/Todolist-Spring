@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/todolist
+    driverClassName: org.postgresql.Driver
+    username: todolist
+    password: todolist
+    testWhileIdle: true
+    validationQuery: SELECT 1

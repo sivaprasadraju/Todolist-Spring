@@ -1,4 +1,4 @@
-package com.example.todolistspring;
+package com.example.todolistspring.Controller;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;

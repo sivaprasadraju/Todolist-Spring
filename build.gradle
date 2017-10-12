@@ -1,3 +1,6 @@
+import static jdk.nashorn.internal.objects.NativeRegExp.compile
+import static jdk.nashorn.internal.objects.NativeRegExp.compile
+
 buildscript {
 	ext {
 		springBootVersion = '1.5.7.RELEASE'
@@ -24,6 +27,9 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web')
+	compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+	compile "org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion"
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile group: 'org.postgresql', name: 'postgresql', version: '9.4.1211'
+	compile group: 'org.flywaydb', name: 'flyway-core', version: '4.1.2'
 }
