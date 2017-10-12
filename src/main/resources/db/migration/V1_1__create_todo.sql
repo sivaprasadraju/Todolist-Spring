@@ -14,3 +14,7 @@ insert into todo values
     (3, 0, 'Meeting', 'HIGH'),
     (4, 0, 'Meeting', 'LOW'),
     (5, 0, 'Meeting', 'HIGH');
+
+
+
+select * from todo;

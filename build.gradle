@@ -4,6 +4,7 @@ import static jdk.nashorn.internal.objects.NativeRegExp.compile
 buildscript {
 	ext {
 		springBootVersion = '1.5.7.RELEASE'
+		lombokVersion = '1.16.18'
 	}
 	repositories {
 		mavenCentral()
@@ -32,4 +33,10 @@ dependencies {
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	compile group: 'org.postgresql', name: 'postgresql', version: '9.4.1211'
 	compile group: 'org.flywaydb', name: 'flyway-core', version: '4.1.2'
+	compile 'io.sentry:sentry:1.5.4'
+	compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion") {
+		exclude module: "spring-boot-starter-tomcat"
+	}
+	compileOnly("org.projectlombok:lombok:$lombokVersion")
+	testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
 }

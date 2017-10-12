@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.example.todolistspring.model.Todo;
 
 import java.util.List;
 
@@ -28,7 +29,7 @@ public class TodoController {
 
 
     @GetMapping(produces = APPLICATION_JSON_VALUE)
-    public List<TodoDto> getTodos() {
+    public List<Todo> getTodos() {
         return todoService.getTodos();
     }
 }
