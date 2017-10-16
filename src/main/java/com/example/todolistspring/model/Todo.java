@@ -15,19 +15,19 @@ public class Todo {
 
     private int done;
 
-    public Todo() {
+   public Todo() {
     }
 
-    public Todo(int id) {
-        this.id = id;
-    }
+//    public Todo(int id) {
+//        this.id = id;
+//    }
 
-    public Todo(int id, String title, String priority, int done) {
-        this.id = id;
-        this.title = title;
-        this.priority = priority;
-        this.done = done;
-    }
+//    public Todo(int id, String title, String priority, int done) {
+//        this.id = id;
+//        this.title = title;
+//        this.priority = priority;
+//        this.done = done;
+//    }
 
     public int getId() {
         return id;
